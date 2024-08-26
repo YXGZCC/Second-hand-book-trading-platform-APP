@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 默认头像 -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user_placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- 用户昵称 -->
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_alignTop="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:text="用户名："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- 账号 -->
+    <TextView
+        android:id="@+id/text_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_name"
+        android:layout_alignStart="@id/text_user_name"
+        android:layout_marginTop="8dp"
+        android:text="账号id："
+        android:textSize="16sp" />
+
+    <!-- 分割线 -->
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- 我的买到的 -->
+    <Button
+        android:id="@+id/text_my_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="16dp"
+        android:text="我买到的"
+        android:textSize="16sp" />
+
+    <!-- 我的卖出的 -->
+    <Button
+        android:id="@+id/text_my_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_toEndOf="@id/text_my_purchases"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="我卖出的"
+        android:textSize="16sp" />
+
+    <!-- 我发布的 -->
+    <Button
+        android:id="@+id/text_my_posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_toEndOf="@id/text_my_sales"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="我发布的"
+        android:textSize="16sp" />
+
+    <!-- 分割线 -->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_my_purchases"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- 前往登录 -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_marginTop="16dp"
+        android:text="前往登录" />
+
+    <!-- 退出登录 -->
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_marginTop="16dp"
+        android:text="退出登录" />
+
+    <!-- 修改密码 -->
+    <Button
+        android:id="@+id/button_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_logout"
+        android:layout_marginTop="16dp"
+        android:text="修改密码" />
+
+</RelativeLayout>

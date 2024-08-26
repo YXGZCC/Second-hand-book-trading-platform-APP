@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.home.BookDetailActivity">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_book_placeholder"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="书名"
+        android:textSize="20sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作者"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出版社"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/publication_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出版年份"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/wear_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="磨损程度"
+        android:paddingTop="8dp" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user_placeholder"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布者"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="购买"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

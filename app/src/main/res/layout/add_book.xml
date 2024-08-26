@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/et_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="书名" />
+
+        <EditText
+            android:id="@+id/et_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="作者" />
+
+        <EditText
+            android:id="@+id/et_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ISBN号" />
+
+        <EditText
+            android:id="@+id/et_publication_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="出版年份" />
+
+        <EditText
+            android:id="@+id/et_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="出版社" />
+
+        <EditText
+            android:id="@+id/et_book_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="书籍类别" />
+
+        <EditText
+            android:id="@+id/et_original_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="原价" />
+
+        <EditText
+            android:id="@+id/et_current_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="现价" />
+
+        <EditText
+            android:id="@+id/et_wear_degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="磨损度" />
+
+        <EditText
+            android:id="@+id/et_book_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品介绍" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认发布" />
+    </LinearLayout>
+</ScrollView>
